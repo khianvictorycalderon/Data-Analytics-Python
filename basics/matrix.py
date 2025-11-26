@@ -33,3 +33,6 @@ print(f"Mark's allowance on Thursday is: {allowance[people["Mark"]][day["Thursda
 
 # Get Azil's allowance on Tuesday
 print(f"Azil's allowance on Tuesday is: {allowance[people["Azil"]][day["Tuesday"]]}")
+
+# Get Sean's allownace in One Week
+print(f"Sean's allowance in one week are: {allowance[people["Sean"]]}")
