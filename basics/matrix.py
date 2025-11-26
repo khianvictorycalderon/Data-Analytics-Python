@@ -10,6 +10,14 @@ people = {
     "Jayvee": 4
 }
 
+day = {
+    "Monday": 0,
+    "Tuesday": 1,
+    "Wednesday": 2,
+    "Thursday": 3,
+    "Friday": 4
+}
+
 # Allowace in one week
 allowance = np.array([
     # Day 1 - 5, Mon - Friday
@@ -19,3 +27,6 @@ allowance = np.array([
     [150, 200, 350, 400, 550],
     [300, 250, 150, 200, 350]
 ])
+
+# Get Mark allowance on Thursday
+print(f"Mark allowance in Thursday is: {allowance[people["Mark"]][day["Thursday"]]}")
