@@ -12,6 +12,7 @@ people = {
 
 # Allowace in one week
 allowance = np.array([
+    # Day 1 - 5, Mon - Friday
     [200, 400, 150, 300, 600],
     [400, 200, 300, 350, 150],
     [250, 300, 100, 200, 300],
