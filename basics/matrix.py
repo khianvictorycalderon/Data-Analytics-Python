@@ -32,13 +32,19 @@ allowance = np.array([
 ])
 
 # Get Mark allowance on Thursday
+print("STATEMENT 1: What is Mark's allowance on Thursday?")
 print(f"Mark's allowance on Thursday is: {allowance[people['Mark']][days['Thursday']]}")
+print("INSIGHT 1: Mark receives a moderate allowance midweek, which may reflect a routine distribution schedule.")
 
 # Get Azil's allowance on Tuesday
+print("STATEMENT 2: What is Azil's allowance on Tuesday?")
 print(f"Azil's allowance on Tuesday is: {allowance[people['Azil']][days['Tuesday']]}")
+print("INSIGHT 2: Azil's allowance is lower on Tuesday, suggesting his higher allowances are given later in the week.")
 
 # Get Sean's allowance in One Week
+print("STATEMENT 3: What is Sean's allowance in the entire Week?")
 print(f"Sean's allowance in one week are: {allowance[people['Sean']]}")
+print("INSIGHT 3: Sean's weekly allowance varies daily, peaking on Monday and Thursday, indicating uneven distribution.")
 
 # Let's start plotting
 plt.figure(figsize=(10,6))
