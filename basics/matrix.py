@@ -32,24 +32,26 @@ allowance = np.array([
 ])
 
 # Get Mark allowance on Thursday
-print(f"Mark's allowance on Thursday is: {allowance[people["Mark"]][days["Thursday"]]}")
+print(f"Mark's allowance on Thursday is: {allowance[people['Mark']][days['Thursday']]}")
 
 # Get Azil's allowance on Tuesday
-print(f"Azil's allowance on Tuesday is: {allowance[people["Azil"]][days["Tuesday"]]}")
+print(f"Azil's allowance on Tuesday is: {allowance[people['Azil']][days['Tuesday']]}")
 
 # Get Sean's allownace in One Week
-print(f"Sean's allowance in one week are: {allowance[people["Sean"]]}")
+print(f"Sean's allowance in one week are: {allowance[people['Sean']]}")
 
 # Let's start plotting
+plt.figure(figsize=(10,6))
 
 # Let's put label first
 plt.xticks(day_number, list(days.keys()))
 plt.xlabel("Days of the Week")
-plt.ylabel("Person")
+plt.ylabel("Allowances")
 
 # Plot all people
 for name, idx in people.items():
     plt.plot(day_number, allowance[idx], marker="o", label=name)
 
+plt.grid(True, linestyle='--', alpha=0.5)
 plt.legend(title="Person")
 plt.show()
