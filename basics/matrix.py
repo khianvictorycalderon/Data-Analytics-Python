@@ -10,13 +10,16 @@ people = {
     "Jayvee": 4
 }
 
-day = {
+days = {
     "Monday": 0,
     "Tuesday": 1,
     "Wednesday": 2,
     "Thursday": 3,
     "Friday": 4
 }
+
+# We'll use this in plotting
+day_number = np.array([1, 2, 3, 4, 5])
 
 # Allowace in one week
 allowance = np.array([
@@ -29,10 +32,24 @@ allowance = np.array([
 ])
 
 # Get Mark allowance on Thursday
-print(f"Mark's allowance on Thursday is: {allowance[people["Mark"]][day["Thursday"]]}")
+print(f"Mark's allowance on Thursday is: {allowance[people["Mark"]][days["Thursday"]]}")
 
 # Get Azil's allowance on Tuesday
-print(f"Azil's allowance on Tuesday is: {allowance[people["Azil"]][day["Tuesday"]]}")
+print(f"Azil's allowance on Tuesday is: {allowance[people["Azil"]][days["Tuesday"]]}")
 
 # Get Sean's allownace in One Week
 print(f"Sean's allowance in one week are: {allowance[people["Sean"]]}")
+
+# Let's start plotting
+
+# Let's put label first
+plt.xticks(day_number, list(days.keys()))
+plt.xlabel("Days of the Week")
+plt.ylabel("Person")
+
+# Plot all people
+for name, idx in people.items():
+    plt.plot(day_number, allowance[idx], marker="o", label=name)
+
+plt.legend(title="Person")
+plt.show()
