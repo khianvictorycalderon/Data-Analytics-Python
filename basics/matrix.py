@@ -29,4 +29,4 @@ allowance = np.array([
 ])
 
 # Get Mark allowance on Thursday
-print(f"Mark's allowance in Thursday is: {allowance[people["Mark"]][day["Thursday"]]}")
+print(f"Mark's allowance on Thursday is: {allowance[people["Mark"]][day["Thursday"]]}")
