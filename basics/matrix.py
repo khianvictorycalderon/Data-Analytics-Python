@@ -37,7 +37,7 @@ print(f"Mark's allowance on Thursday is: {allowance[people['Mark']][days['Thursd
 # Get Azil's allowance on Tuesday
 print(f"Azil's allowance on Tuesday is: {allowance[people['Azil']][days['Tuesday']]}")
 
-# Get Sean's allownace in One Week
+# Get Sean's allowance in One Week
 print(f"Sean's allowance in one week are: {allowance[people['Sean']]}")
 
 # Let's start plotting
